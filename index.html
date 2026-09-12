@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MtShad is a luxury couture house creating sculptural abayas for modern women." />
+  <link rel="canonical" href="https://mtshad.com/" />
+  <title>MtShad — Luxury Couture Abayas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="MtShad home">MtShad</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a>
+      <a href="#manifesto">The House</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
+      <button class="cart-button" id="cartButton">Bag <span id="cartCount">0</span></button>
+      <button class="menu-button" id="menuButton" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Collection 01 — The Evening Edit</p>
+        <h1>Quiet<br /><em>radiance.</em></h1>
+        <p class="hero-text">Couture abayas shaped by light, movement and restraint. Designed for the moments that deserve to linger.</p>
+        <a class="button button-dark" href="#shop">Discover the collection <span>↘</span></a>
+      </div>
+      <div class="hero-stamp">MS<br /><span>01</span></div>
+      <p class="scroll-note">Scroll to enter <span>↓</span></p>
+    </section>
+
+    <section class="ticker" aria-label="Brand statement">
+      <div class="ticker-track"><span>Made for the luminous hour</span><b>✳</b><span>Small-batch couture</span><b>✳</b><span>Modern abayas, timeless presence</span><b>✳</b><span>Made for the luminous hour</span><b>✳</b></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / The current collection</p><h2>New arrivals</h2></div>
+        <p class="section-intro">Three considered silhouettes, finished in luminous fabrics and made in limited quantities.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All abayas</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="abayas">
+          <div class="product-visual visual-layla"><span>01</span><button class="quick-add" data-name="Layla Silk Abaya" data-price="680">Select abaya</button></div>
+          <div class="product-meta"><div><h3>Layla Silk Abaya</h3><p>Onyx / Silk crepe</p></div><strong>$680</strong></div>
+        </article>
+        <article class="product-card" data-category="abayas">
+          <div class="product-visual visual-sahar"><span>02</span><button class="quick-add" data-name="Sahar Embroidered Abaya" data-price="920">Select abaya</button></div>
+          <div class="product-meta"><div><h3>Sahar Embroidered Abaya</h3><p>Midnight / Hand-finished</p></div><strong>$920</strong></div>
+        </article>
+        <article class="product-card" data-category="abayas">
+          <div class="product-visual visual-noura"><span>03</span><button class="quick-add" data-name="Noura Satin Abaya" data-price="760">Select abaya</button></div>
+          <div class="product-meta"><div><h3>Noura Satin Abaya</h3><p>Warm sand / Satin finish</p></div><strong>$760</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="order-section" id="orderSection" hidden>
+      <div class="section-heading"><div><p class="eyebrow">02 / Your MtShad order</p><h2>Make it<br /><em>yours.</em></h2></div><p class="section-intro">Selected abaya: <strong id="selectedAbaya">—</strong></p></div>
+      <form class="order-form" id="orderForm">
+        <div class="form-grid"><label>First name<input name="firstName" required /></label><label>Last name<input name="lastName" required /></label><label>Phone number<input name="phone" type="tel" required /></label><label>Email<input name="email" type="email" required /></label></div>
+        <label>Size<select name="size"><option>One size fits all</option></select></label>
+        <label>Special requests<textarea name="requests" rows="4" placeholder="Tell us about any special requests"></textarea></label>
+        <fieldset><legend>Payment method</legend><label class="choice"><input type="radio" name="payment" value="card" required /> Credit / debit card</label><label class="choice"><input type="radio" name="payment" value="apple-pay" /> Apple Pay</label></fieldset>
+        <button class="button button-dark" type="submit">Place request <span>↗</span></button><p class="form-message" id="orderMessage" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="box-section" id="manifesto">
+      <div class="box-mark">MS</div><div class="box-copy"><p class="eyebrow">03 / The MtShad box</p><h2>Wrapped with<br /><em>intention.</em></h2><p>The official MtShad box is included with every purchase. Each abaya arrives presented with the care it deserves.</p></div>
+    </section>
+
+    <section class="slogan-section" id="journal"><p class="eyebrow">MtShad</p><h2>Quiet radiance.</h2><p>Luxury abayas for a presence that speaks softly.</p></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#top">MtShad</a><div class="footer-links"><a href="#shop">Instagram</a><a href="#shop">Contact</a><a href="#shop">Shipping & returns</a></div><p>© 2024 MtShad Couture House</p></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close shopping bag">×</button></div><div class="cart-items" id="cartItems"><p class="empty-cart">Your bag is currently empty.</p></div><div class="drawer-foot"><div><span>Subtotal</span><strong id="cartTotal">$0</strong></div><button class="button button-dark checkout-button">Checkout <span>↗</span></button></div></aside><div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
